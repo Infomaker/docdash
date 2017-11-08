@@ -330,6 +330,26 @@ footer {
   margin: 0;
 }
 
+
+/* Custom table style */
+
+table {
+    border-collapse: collapse;
+    font-size: 0.75rem;
+    width: 100%;
+}
+
+th {
+    color: #fff;
+    background-color: #0079b5;
+    border-bottom: 2px solid #eceeef
+}
+
+th, td {
+    padding: .75rem;
+    border-top: 1px solid #eceeef;
+}
+
 .params, .props {
   border-spacing: 0;
   border: 1px solid #ddd;
@@ -370,6 +390,11 @@ footer {
 .params thead tr, .props thead tr {
    background-color: #fff;
    font-weight: bold;
+}
+
+.params thead tr th, .props thead tr th {
+    color: #292b2c;
+    background-color: #fff;
 }
 
 .params .params thead tr, .props .props thead tr {
