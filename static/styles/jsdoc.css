@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata|Lato:300,400,700);
 
 * {
   box-sizing: border-box
@@ -14,7 +14,7 @@ body {
   background-color: white;
   margin: 0 auto;
   padding: 0 20px;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 16px;
   line-height: 160%;
 }
@@ -25,7 +25,7 @@ img {
 
 a,
 a:active {
-  color: #606;
+  color: #0275d8;
   text-decoration: none;
 }
 
@@ -46,7 +46,7 @@ p, ul, ol, blockquote {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -84,7 +84,7 @@ h4 {
 
 h4.name {
   color: #fff;
-  background: #6d426d;
+  background: #0079b5;
   box-shadow: 0 .25em .5em #d3d3d3;
   border-top: 1px solid #d3d3d3;
   border-bottom: 1px solid #d3d3d3;
@@ -93,11 +93,11 @@ h4.name {
 }
 
 h4.name a {
-  color: #fc83ff;
+  color: #7dc4e8;
 }
 
 h4.name a:hover {
-  border-bottom-color: #fc83ff;
+  border-bottom-color: #7dc4e8;
 }
 
 h5, .container-overview .subsection-title {
@@ -109,14 +109,12 @@ h5, .container-overview .subsection-title {
 h6 {
   font-size: 100%;
   letter-spacing: -0.01em;
-  margin: 6px 0 3px 0;
+  margin: 1px 0 3px 0;
   font-style: italic;
 }
 
 tt, code, kbd, samp {
-  font-family: Consolas, Monaco, 'Andale Mono', monospace;
-  background: #f4f4f4;
-  padding: 1px 5px;
+  font-family: 'Inconsolata', Consolas, Monaco, 'Andale Mono', monospace;
 }
 
 .class-description {
@@ -180,7 +178,7 @@ nav h3 {
 }
 
 nav ul {
-  font-family: 'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
+  font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
   font-size: 100%;
   line-height: 17px;
   padding: 0;
@@ -190,7 +188,7 @@ nav ul {
 
 nav ul a,
 nav ul a:active {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
   line-height: 18px;
   padding: 0;
   display: block;
@@ -199,7 +197,7 @@ nav ul a:active {
 
 nav a:hover,
 nav a:active {
-  color: #606;
+  color: #0275d8;
 }
 
 nav > ul {
@@ -207,7 +205,7 @@ nav > ul {
 }
 
 nav > ul > li > a {
-  color: #606;
+  color: #0275d8;
 }
 
 nav ul ul {
@@ -237,7 +235,7 @@ nav h2 {
 nav > h2 > a {
    display: block;
    margin: 10px 0 -10px;
-   color: #606 !important;
+   color: #0275d8 !important;
 }
 
 footer {
@@ -279,11 +277,11 @@ footer {
 }
 
 .name, .signature {
-  font-family: Consolas, Monaco, 'Andale Mono', monospace
+  font-family: 'Inconsolata', Consolas, Monaco, 'Andale Mono', monospace
 }
 
 .signature {
-    color: #fc83ff;
+    color: #7dc4e8;
 }
 
 .details {
@@ -332,69 +330,6 @@ footer {
   margin: 0;
 }
 
-.prettyprint {
-  font-size: 14px;
-  overflow: auto;
-}
-
-.prettyprint.source {
-  width: inherit;
-  line-height: 18px;
-  display: block;
-  background-color: #0d152a;
-  color: #aeaeae;
-}
-
-.prettyprint code {
-  line-height: 18px;
-  display: block;
-  background-color: #0d152a;
-  color: #4D4E53;
-}
-
-.prettyprint > code {
-  padding: 15px;
-}
-
-.prettyprint .linenums code {
-  padding: 0 15px
-}
-
-.prettyprint .linenums li:first-of-type code {
-  padding-top: 15px
-}
-
-.prettyprint code span.line {
-  display: inline-block
-}
-
-.prettyprint.linenums {
-  padding-left: 70px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.prettyprint.linenums ol {
-   padding-left: 0
-}
-
-.prettyprint.linenums li {
-   border-left: 3px #34446B solid;
-}
-
-.prettyprint.linenums li.selected, .prettyprint.linenums li.selected * {
-   background-color: #34446B;
-}
-
-.prettyprint.linenums li * {
-   -webkit-user-select: text;
-   -moz-user-select: text;
-   -ms-user-select: text;
-   user-select: text;
-}
-
 .params, .props {
   border-spacing: 0;
   border: 1px solid #ddd;
@@ -416,7 +351,7 @@ footer {
 
 .params td, .params .name, .props .name, .name code {
    color: #4D4E53;
-   font-family: Consolas, Monaco, 'Andale Mono', monospace;
+   font-family: 'Inconsolata', Consolas, Monaco, 'Andale Mono', monospace;
    font-size: 100%;
 }
 
@@ -453,8 +388,8 @@ footer {
 }
 
 span.param-type, .params td .param-type, .param-type dd {
-   color: #606;
-  font-family: Consolas, Monaco, 'Andale Mono', monospace
+   color: #0275d8;
+  font-family: 'Inconsolata', Consolas, Monaco, 'Andale Mono', monospace
 }
 
 .param-type dt, .param-type dd {
@@ -638,6 +573,10 @@ span.param-type, .params td .param-type, .param-type dd {
   footer {
     margin-left: 0;
   }
+}
+
+article pre {
+    font-size: 90%;
 }
 
 /** Add a '#' to static members */

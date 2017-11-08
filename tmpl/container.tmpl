@@ -139,7 +139,7 @@
         if (methods && methods.length && methods.forEach) {
     ?>
         <h3 class="subsection-title">Methods</h3>
-
+        <?js= self.partial('methodlist.tmpl', methods) ?>
         <?js methods.forEach(function(m) { ?>
             <?js= self.partial('method.tmpl', m) ?>
         <?js }); ?>

@@ -1,0 +1,9 @@
+<?js
+var methods = obj;
+var self = this;
+?>
+<?js if (methods && methods.length) { ?>
+<dl><?js methods.forEach(function(method) { ?>
+    <dt><a href="#<?js= method.name ?>"><?js= method.name ?></a></dt>
+<?js }); ?></dl>
+<?js } ?>

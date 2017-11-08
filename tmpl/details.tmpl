@@ -9,7 +9,7 @@ if (data.defaultvalue && (data.defaultvaluetype === 'object' || data.defaultvalu
         var indentedValues = JSON.stringify(JSON.parse(data.defaultvalue), null, '  ');
         data.defaultvalue = indentedValues;
     } catch (e) {}
-    data.defaultvalue = "<pre class=\"prettyprint\"><code>" + data.defaultvalue + "</code></pre>";
+    data.defaultvalue = "<pre><code>" + data.defaultvalue + "</code></pre>";
     defaultObjectClass = ' class="object-value"';
 }
 ?>
