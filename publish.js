@@ -302,7 +302,8 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
                 itemsNav += '<li>' + linktoFn('', item.name);
                 itemsNav += '</li>';
             } else if ( !hasOwnProp.call(itemsSeen, item.longname) ) {
-                itemsNav += '<li>' + linktoFn(item.longname, item.name.replace(/^module:/, ''));
+                let memberSpan = item.memberof ? ('<span class="member-of">' + item.memberof + '.</span>') : ''
+                itemsNav += '<li>' + linktoFn(item.longname, memberSpan + item.name.replace(/^module:/, ''));
 
                 if (docdash.static && members.find(function (m) { return m.scope === 'static'; } )) {
                     itemsNav += "<ul class='members'>";
@@ -317,7 +318,8 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
                     itemsNav += "</ul>";
                 }
 
-                if (methods.length) {
+                if (methods.length && item.kind !== 'namespace') {
+                    console.log('\n\n' + JSON.stringify(item, null, 2))
                     itemsNav += "<ul class='methods'>";
 
                     methods.forEach(function (method) {

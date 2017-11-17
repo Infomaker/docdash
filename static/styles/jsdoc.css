@@ -118,10 +118,14 @@ tt, code, kbd, samp {
 }
 
 .class-description {
-  font-size: 130%;
+  font-size: 100%;
   line-height: 140%;
   margin-bottom: 1em;
   margin-top: 1em;
+}
+
+.class-description p:first-child {
+
 }
 
 .class-description:empty {
@@ -236,6 +240,11 @@ nav > h2 > a {
    display: block;
    margin: 10px 0 -10px;
    color: #0275d8 !important;
+}
+
+nav span.member-of {
+    color: hsl(207, 10%, 80%);
+    font-weight: 300;
 }
 
 footer {

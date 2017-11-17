@@ -4,9 +4,18 @@ var self = this;
 ?>
 <?js if (data.kind !== 'module') { ?>
     <?js if (data.kind === 'class' && data.classdesc) { ?>
-    <h2>Constructor</h2>
+
+    <?js
+        var typedefs = self.find({kind: 'typedef', name: ['Props', 'State'], memberof: data.longname});
+        if (typedefs && typedefs.length && typedefs.forEach) {
+    ?>
+        <?js typedefs.forEach(function(e) { ?>
+                <?js= self.partial('members.tmpl', e) ?>
+        <?js }); ?>
     <?js } ?>
 
+    <h2>Constructor</h2>
+    <?js } ?>
     <h4 class="name" id="<?js= id ?>"><?js= data.attribs + (kind === 'class' ? 'new ' : '') +
     name + (data.signature || '') ?></h4>
 
@@ -103,4 +112,3 @@ var self = this;
         <?js= self.partial('returns.tmpl', r) ?>
     <?js });
 } } ?>
-
