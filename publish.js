@@ -319,7 +319,6 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
                 }
 
                 if (methods.length && item.kind !== 'namespace') {
-                    console.log('\n\n' + JSON.stringify(item, null, 2))
                     itemsNav += "<ul class='methods'>";
 
                     methods.forEach(function (method) {
