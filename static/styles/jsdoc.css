@@ -339,6 +339,70 @@ footer {
   margin: 0;
 }
 
+/* Prettifyjs */
+.prettyprint {
+  font-size: 14px;
+  overflow: auto;
+}
+
+.prettyprint.source {
+  width: inherit;
+  line-height: 18px;
+  display: block;
+  background-color: #2d2d2d;
+  color: #aeaeae;
+}
+
+.prettyprint code {
+  line-height: 18px;
+  display: block;
+  background-color: #2d2d2d;
+  color: #4D4E53;
+}
+
+.prettyprint > code {
+  padding: 15px;
+}
+
+.prettyprint .linenums code {
+  padding: 0 15px
+}
+
+.prettyprint .linenums li:first-of-type code {
+  padding-top: 15px
+}
+
+.prettyprint code span.line {
+  display: inline-block
+}
+
+.prettyprint.linenums {
+  padding-left: 70px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.prettyprint.linenums ol {
+   padding-left: 0
+}
+
+.prettyprint.linenums li {
+   border-left: 3px #444 solid;
+}
+
+.prettyprint.linenums li.selected, .prettyprint.linenums li.selected * {
+   background-color: #444;
+}
+
+.prettyprint.linenums li * {
+   -webkit-user-select: text;
+   -moz-user-select: text;
+   -ms-user-select: text;
+   user-select: text;
+}
+
 
 /* Custom table style */
 
@@ -609,10 +673,6 @@ span.param-type, .params td .param-type, .param-type dd {
   }
 }
 
-article pre {
-    font-size: 90%;
-}
-
 /** Add a '#' to static members */
 [data-type="member"] a::before {
   content: '#';
@@ -620,3 +680,4 @@ article pre {
   margin-left: -14px;
   margin-right: 5px;
 }
+
