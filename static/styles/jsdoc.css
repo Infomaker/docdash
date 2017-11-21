@@ -193,10 +193,10 @@ nav ul {
 nav ul a,
 nav ul a:active {
   font-family: 'Lato', sans-serif;
-  line-height: 18px;
+  line-height: 20px;
   padding: 0;
   display: block;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 nav a:hover,
